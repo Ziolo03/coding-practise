@@ -22,8 +22,9 @@ def divide(a, b):
 
 
 def to_binary(n):
+    """Convert a natural number (0–100) to binary string representation."""
     if not isinstance(n, int):
         raise TypeError("Input must be a natural number")
-    if not (0 <= n <= 100):
+    if not 0 <= n <= 100:
         raise ValueError("Number must be between 0 and 100")
     return bin(n)
